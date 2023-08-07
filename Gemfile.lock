@@ -1,9 +1,16 @@
+GIT
+  remote: https://github.com/jdelStrother/delayed_job
+  revision: f379d6a35f69998f20117b9be0fdcc9dac341398
+  branch: ruby3
+  specs:
+    delayed_job (4.1.9)
+      activesupport (>= 3.0, < 7.1)
+
 PATH
   remote: .
   specs:
     delayed_job_web (1.4.4)
       activerecord (> 3.0.0)
-      delayed_job (> 2.0.3)
       rack-protection (>= 1.5.5)
       sinatra (>= 1.4.4)
 
@@ -78,8 +85,6 @@ GEM
     builder (3.2.4)
     concurrent-ruby (1.1.10)
     crass (1.0.6)
-    delayed_job (4.1.10)
-      activesupport (>= 3.0, < 8.0)
     digest (3.1.0)
     erubi (1.11.0)
     globalid (1.0.0)
@@ -170,6 +175,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  delayed_job!
   delayed_job_web!
   minitest (~> 5.1)
   rack-test (~> 2.0)
